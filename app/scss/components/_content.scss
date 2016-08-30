@@ -1,7 +1,28 @@
 /* ===========================================
    Page content styling
    =========================================== */
-
 body {
-  background: lightcoral;
+
+    .video-container {
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 100%;
+        width: 100%;
+        overflow: hidden;
+
+        video {
+            position: absolute;
+            top: 0;
+            left: 50%;
+            width: 100%;
+            transform: translateX(-50%);
+        }
+    }
+
+    .wrapper {
+        margin: 60vw auto 100px;
+        max-width: 100%;
+        max-width: 900px;
+    }
 }

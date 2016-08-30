@@ -1,9 +1,9 @@
 @font-face {
-    font-family: '';
+    font-family: 'franchise-bold';
     src: url('');
     src: url('') format('embedded-opentype'),
-    url('') format('woff2'), /* Super Modern Browsers */
-    url('') format('woff'), /* Pretty Modern Browsers */
-    url('')  format('truetype'), /* Safari, Android, iOS */
+    url('fonts/franchise-bold.woff2') format('woff2'), /* Super Modern Browsers */
+    url('fonts/franchise-bold.woff') format('woff'), /* Pretty Modern Browsers */
+    url('fonts/franchise-bold.ttf')  format('truetype'), /* Safari, Android, iOS */
     url('') format('svg'); /* Legacy iOS */
 }

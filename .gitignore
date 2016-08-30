@@ -1,0 +1,10 @@
+node_modules/
+bower_components/
+.DS_Store
+.idea/
+app/.DS_Store
+app/fonts/
+app/js/lib/.DS_Store
+dist/
+package.json
+/node_modules/

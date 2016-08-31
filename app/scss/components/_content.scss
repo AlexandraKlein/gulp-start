@@ -3,7 +3,7 @@
     padding-top: 30px;
     margin-top: -30px;
     p {
-        font-family: brandon_text_regularregular,"Apple Color Emoji","Segoe UI Emoji",NotoColorEmoji,"Segoe UI Symbol","Android Emoji",EmojiSymbols;
+        font-family: 'BrandonText-Regular', "Apple Color Emoji", "Segoe UI Emoji", "NotoColorEmoji", "Segoe UI Symbol", "Android Emoji", "EmojiSymbols";
         text-transform: none;
     }
 }
@@ -63,8 +63,8 @@
     max-width: 900px;
 
     @include mobile {
-        padding: 0 20px;
-        margin: 110px auto 50px;
+        padding: 0 30px;
+        margin: 200px auto 50px;
         width: auto;
     }
 
@@ -94,7 +94,7 @@
                 line-height: 1.3;
 
                 @include mobile {
-                    font-size: 9px;
+                    font-size: 20px;
                 }
             }
 
@@ -102,15 +102,16 @@
                 color: #000;
                 text-align: center;
                 display: block;
-                margin: auto;
+                margin: 70px auto 50px;
                 width: 120px;
                 font-size: 20px;
-                font-family: brandon_text_regularregular,Apple Color Emoji,Segoe UI Emoji,NotoColorEmoji,Segoe UI Symbol,Android Emoji,EmojiSymbols;
+                font-family: 'BrandonText-Regular', "Apple Color Emoji", "Segoe UI Emoji", "NotoColorEmoji", "Segoe UI Symbol", "Android Emoji", "EmojiSymbols";
                 text-decoration: underline;
                 text-transform: none;
 
                 @include mobile {
-                    font-size: 15px;
+                    font-size: 32px;
+                    width: 200px;
                 }
             }
         }
@@ -133,7 +134,7 @@
         }
 
         @include mobile {
-            font-size: 46px;
+            font-size: 86px;
             display: inline;
             line-height: 1;
             background-image: linear-gradient(transparent 0,#0c9 0);
@@ -159,9 +160,10 @@
         }
 
         @include mobile {
-            font-size: 22px;
-            padding: 8px 10px;
-            width: 125px;
+            width: 250px;
+            font-size: 42px;
+            padding: 15px 30px;
+            line-height: 1;
         }
     }
 
@@ -174,14 +176,19 @@
 
         @include mobile {
             display: block;
+            margin-top: 140px;
         }
 
         a.btn {
             @include mobile {
                 position: absolute;
-                top: -120px;
+                top: -220px;
                 left: 50%;
                 transform: translateX(-50%);
+                width: 250px;
+                font-size: 42px;
+                padding: 15px 30px;
+                line-height: 1;
             }
         }
 
@@ -190,13 +197,14 @@
             right: 36px;
             top: 60px;
             color: #000;
-            font-family: brandon_text_regularregular,Apple Color Emoji,Segoe UI Emoji,NotoColorEmoji,Segoe UI Symbol,Android Emoji,EmojiSymbols;
+            font-family: 'BrandonText-Regular', "Apple Color Emoji", "Segoe UI Emoji", "NotoColorEmoji", "Segoe UI Symbol", "Android Emoji", "EmojiSymbols";
             text-decoration: underline;
             text-transform: none;
 
             @include mobile {
+                font-size: 32px;
                 position: absolute;
-                top: -64px;
+                top: -135px;
                 left: 50%;
                 right: auto;
                 transform: translateX(-50%);
@@ -207,18 +215,24 @@
     p {
         margin-top: 0;
         font-size: 20px;
+
+        @include mobile {
+            font-size: 32px;
+            line-height: 44px;
+        }
     }
 
     .social-buttons {
-        margin-top: 20px;
+        margin: 40px 0 50px;
         list-style: none;
         display: flex;
         padding-left: 0;
 
         .socialIcon {
             display: inline-block;
-            height: 44px;
-            width: 44px;
+            height: 80px;
+            width: 80px;
+            background-size: cover !important;
 
             &.facebook {
                 background: url("/~/media/images/taco-bell/win-psvr/facebook.png");
@@ -254,7 +268,6 @@
         }
 
         ul {
-
             list-style: inherit;
             color: #5e5e5e;
             padding-left: 20px;
@@ -264,8 +277,15 @@
 
             li {
                 list-style: inherit;
-                font-family: brandon_text_regularregular,"Apple Color Emoji","Segoe UI Emoji",NotoColorEmoji,"Segoe UI Symbol","Android Emoji",EmojiSymbols;
+                font-family: 'BrandonText-Regular', "Apple Color Emoji", "Segoe UI Emoji", "NotoColorEmoji", "Segoe UI Symbol", "Android Emoji", "EmojiSymbols";
                 text-transform: none;
+            }
+
+            @include mobile {
+                font-size: 32px;
+                line-height: 44px;
+                padding-left: 40px;
+                margin-top: 40px;
             }
         }
     }

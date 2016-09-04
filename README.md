@@ -4,7 +4,7 @@ NPM & Gulp
 
 ## Installation
 
-`$ git clone https://github.com/AlexandraKlein/gm.git`
+`$ git clone https://github.com/AlexandraKlein/gulp-start.git`
 
 `$ cd gm`
 

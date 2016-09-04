@@ -6,7 +6,7 @@ NPM & Gulp
 
 `$ git clone https://github.com/AlexandraKlein/gulp-start.git`
 
-`$ cd gm`
+`$ cd gulp-start`
 
 `$ sudo npm install`
 

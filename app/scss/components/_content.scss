@@ -24,12 +24,12 @@
     position: absolute;
     top: 0;
     right: 0;
-    height: 53vw;
+    height: 51.8vw;
     width: 100%;
     padding: 0;
     overflow: hidden;
 
-    @include just-tablet {
+    @include tablet-max {
         position: relative;
         top: inherit;
         right: inherit;
@@ -37,17 +37,6 @@
         width: 100%;
         padding: 0;
         overflow: hidden;
-
-        video {
-            position: relative;
-            top: inherit;
-            left: inherit;
-            width: 100%;
-            padding-left: 0;
-            margin-top: 0;
-            transform: none;
-            display: inherit;
-        }
     }
 
     @include mobile {
@@ -63,17 +52,29 @@
         margin-top: 60px;
         transform: translateX(-50%);
         display: block;
+
+        @include tablet-max {
+            position: relative;
+            top: inherit;
+            left: inherit;
+            width: 100%;
+            padding-left: 0;
+            margin-top: 0;
+            transform: none;
+            display: inherit;
+        }
     }
 }
 
 .gif-container {
+    display: none;
     width: 100vw;
     img {
         width: 100%;
     }
 
-    @include tablet {
-        display: none;
+    @include mobile {
+        display: block;
     }
 }
 
@@ -89,7 +90,7 @@
         width: auto;
     }
 
-    @include just-tablet {
+    @include tablet-max {
         margin: 0 auto 50px;
     }
 

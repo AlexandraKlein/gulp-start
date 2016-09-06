@@ -15,8 +15,9 @@
 }
 
 .mobile-only {
-    @include tablet {
-        display: none;
+    display: none;
+    @include mobile {
+        display: block;
     }
 }
 
@@ -154,8 +155,9 @@
         }
 
         &.mobile-only {
-            @include tablet {
-                display: none;
+            display: none;
+            @include mobile {
+                display: block;
             }
         }
 

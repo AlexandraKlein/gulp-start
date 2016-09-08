@@ -99,7 +99,7 @@
         margin: 0 auto;
 
         a.btn {
-            margin: -100px auto 0;
+            margin: -60px auto 0;
 
             @include mobile {
                 margin: 0 auto;
@@ -107,7 +107,7 @@
         }
 
         .disclaimer {
-            margin: 80px auto 100px;
+            margin: 50px auto 100px;
             padding: 50px 0;
             border-top: 1px solid #000;
 
@@ -129,7 +129,7 @@
                 color: #000;
                 text-align: center;
                 display: block;
-                margin: 70px auto 50px;
+                margin: 25px auto 50px;
                 width: 120px;
                 font-size: 20px;
                 font-family: 'BrandonText-Regular', "Apple Color Emoji", "Segoe UI Emoji", "NotoColorEmoji", "Segoe UI Symbol", "Android Emoji", "EmojiSymbols";
@@ -157,7 +157,7 @@
         &.mobile-only {
             display: none;
             @include mobile {
-                display: block;
+                display: inline;
             }
         }
 
@@ -204,7 +204,7 @@
 
         @include mobile {
             display: block;
-            margin-top: 140px;
+            margin-top: 210px;
         }
 
         a.btn {

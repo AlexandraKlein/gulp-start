@@ -344,6 +344,10 @@ img.full-width {
         padding-top: 0;
         margin-top: 0;
 
+        @include mobile {
+            height: auto;
+        }
+
         @include tablet-max {
             height: 500px;
 
@@ -358,6 +362,83 @@ img.full-width {
             video {
                 padding-left: 120px;
                 height: auto;
+            }
+        }
+
+        .psvr-cta-container {
+            position: absolute;
+            top: 45.7vw;
+            width: 100%;
+            left: 50%;
+            transform: translateX(-50%);
+            margin-left: 61px;
+            display: -ms-flexbox;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            @include tablet-max {
+                top: 520px;
+                margin-left: 212px;
+            }
+
+            > * {
+                margin: 10px;
+                font-size: 28px;
+            }
+
+            h2 {
+                color: #fff;
+
+                &:first-of-type {
+                    position: relative;
+
+                    &:after {
+                        content: '';
+                        border-right: 1px solid #393d62;
+                        position: absolute;
+                        right: -10px;
+                        bottom: 7px;
+                        height: 20px;
+                    }
+                }
+            }
+
+            a.btn {
+                padding: 14px 50px;
+                line-height: 1;
+            }
+
+            a.learn-more {
+                font-size: 28px;
+                color: #3ad3aa;
+                border-bottom: 2px solid #3ad3aa;
+                line-height: 35px;
+            }
+        }
+    }
+}
+
+body.has-emergency {
+    #win-psvr {
+        &.home-masthead {
+            .video-container {
+                video {
+                    top: 60px;
+                }
+            }
+        }
+    }
+}
+
+body.search-scrolled {
+    height: calc(48vw + 60px);
+    #win-psvr {
+        &.home-masthead {
+            .video-container {
+                video {
+                    top: 0;
+                }
             }
         }
     }

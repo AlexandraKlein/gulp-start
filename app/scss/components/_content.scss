@@ -1,12 +1,20 @@
 #win-psvr {
+    position: relative;
     background-color: #e6e5e6;
     padding-top: 30px;
     margin-top: -30px;
+
+    @include tablet {
+        margin-top: 0;
+    }
+
     p {
         font-family: 'BrandonText-Regular', "Apple Color Emoji", "Segoe UI Emoji", "NotoColorEmoji", "Segoe UI Symbol", "Android Emoji", "EmojiSymbols";
         text-transform: none;
     }
 }
+
+
 
 .desktop-only {
     @include mobile {
@@ -26,16 +34,16 @@
     top: 0;
     right: 0;
     height: 51.8vw;
-    width: 100%;
+    min-height: 500px;
+    width: 101%;
     padding: 0;
     overflow: hidden;
 
     @include tablet-max {
-        position: relative;
+        position: absolute;
         top: inherit;
         right: inherit;
         height: 500px;
-        width: 100%;
         padding: 0;
         overflow: hidden;
     }
@@ -48,22 +56,9 @@
         position: absolute;
         top: 0;
         left: 50%;
-        width: 100%;
-        padding-left: 122px;
-        margin-top: 60px;
+        width: 101%;
         transform: translateX(-50%);
         display: block;
-
-        @include tablet-max {
-            position: relative;
-            top: inherit;
-            left: inherit;
-            width: 100%;
-            padding-left: 0;
-            margin-top: 0;
-            transform: none;
-            display: inherit;
-        }
     }
 }
 
@@ -81,7 +76,7 @@
 
 .psvr-wrapper {
     position: relative;
-    margin: 45vw auto 50px;
+    margin: 500px auto 50px;
     padding: 0 40px;
     max-width: 900px;
 
@@ -91,8 +86,8 @@
         width: auto;
     }
 
-    @include tablet-max {
-        margin: 0 auto 50px;
+    @include desktop {
+        margin: 45vw auto 50px;
     }
 
     &.two {

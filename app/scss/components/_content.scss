@@ -342,11 +342,13 @@ img.full-width {
     &.home-masthead {
         position: relative;
         height: 48vw;
+        min-height: 500px;
         padding-top: 0;
         margin-top: 0;
 
         @include mobile {
             height: auto !important;
+            min-height: 0 !important;
         }
 
         @include tablet-max {
@@ -424,10 +426,8 @@ img.full-width {
     }
 }
 
-#home-root {
-    background: #e6e5e6 !important;
-}
+.gif-container {
+    &.home-masthead {
 
-.home-page:not(.search-scrolled) .search {
-    background: radial-gradient(farthest-corner at 100px 100px,#be29d3 0,#6B1783 86%,#4B0C5E 100%) !important;
+    }
 }

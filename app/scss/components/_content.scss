@@ -340,12 +340,13 @@ img.full-width {
 #win-psvr {
 
     &.home-masthead {
+        position: relative;
         height: 48vw;
         padding-top: 0;
         margin-top: 0;
 
         @include mobile {
-            height: auto;
+            height: auto !important;
         }
 
         @include tablet-max {
@@ -357,34 +358,38 @@ img.full-width {
         }
 
         .video-container {
-            height: 100%;
+            left: -1px;
+            right: auto;
+            height: 500px;
+
+
+            @include mobile {
+                height: auto !important;
+            }
+
+            @include desktop {
+                height: 53vw;
+            }
 
             video {
-                padding-left: 120px;
+                margin-top: 0;
+                padding-left: 0;
                 height: auto;
             }
         }
 
         .psvr-cta-container {
             position: absolute;
-            top: 45.7vw;
-            width: 100%;
+            bottom: 40px;
+            width: 600px;
             left: 50%;
             transform: translateX(-50%);
-            margin-left: 61px;
-            display: -ms-flexbox;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-
-            @include tablet-max {
-                top: 520px;
-                margin-left: 212px;
-            }
+            display: block;
 
             > * {
                 margin: 10px;
                 font-size: 28px;
+                display: inline-block;
             }
 
             h2 {
@@ -419,27 +424,10 @@ img.full-width {
     }
 }
 
-body.has-emergency {
-    #win-psvr {
-        &.home-masthead {
-            .video-container {
-                video {
-                    top: 60px;
-                }
-            }
-        }
-    }
+#home-root {
+    background: #e6e5e6 !important;
 }
 
-body.search-scrolled {
-    height: calc(48vw + 60px);
-    #win-psvr {
-        &.home-masthead {
-            .video-container {
-                video {
-                    top: 0;
-                }
-            }
-        }
-    }
+.home-page:not(.search-scrolled) .search {
+    background: radial-gradient(farthest-corner at 100px 100px,#be29d3 0,#6B1783 86%,#4B0C5E 100%) !important;
 }

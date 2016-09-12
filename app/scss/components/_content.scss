@@ -410,6 +410,11 @@ img.full-width {
                 margin: 10px;
                 font-size: 28px;
                 display: inline-block;
+
+                @include mobile {
+                    display: block;
+                    font-size: 50px;
+                }
             }
 
             h2 {
@@ -418,6 +423,10 @@ img.full-width {
                 &:first-of-type {
                     position: relative;
 
+                    @include mobile {
+                        margin: 10px 50px;
+                    }
+
                     &:after {
                         content: '';
                         border-right: 1px solid #393d62;
@@ -425,13 +434,35 @@ img.full-width {
                         right: -10px;
                         bottom: 7px;
                         height: 20px;
+
+                        @include mobile {
+                            border-right: 3px solid #8d93a9;
+                            right: -34px;
+                            bottom: 10px;
+                            height: 40px;
+                        }
                     }
+                }
+
+                @include mobile {
+                    display: inline-block;
+                    margin: 10px;
                 }
             }
 
             a.btn {
                 padding: 14px 50px;
                 line-height: 1;
+
+                &:hover {
+                    background-color: #c2009b;
+                }
+
+                @include mobile {
+                    padding: 20px 0;
+                    text-align: center;
+                    width: 500px;
+                }
             }
 
             a.learn-more {
@@ -439,6 +470,21 @@ img.full-width {
                 color: #3ad3aa;
                 border-bottom: 2px solid #3ad3aa;
                 line-height: 35px;
+
+                &:hover {
+                    color: #004f4a;
+                    border-color: #004f4a;
+                }
+
+                @include mobile {
+                    display: inline-block;
+                    font-size: 50px;
+                    line-height: 50px;
+                    border-width: 4px;
+                    position: relative;
+                    left: 50%;
+                    transform: translateX(-50%);
+                }
             }
         }
 
@@ -459,6 +505,10 @@ img.full-width {
                 @include desktop {
                     padding: 0 30%;
                 }
+            }
+
+            @include mobile {
+                display: none;
             }
         }
     }

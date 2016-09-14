@@ -1,6 +1,6 @@
 #win-psvr {
     position: relative;
-    background-color: #e6e5e6;
+    background-color: #eaeaea;
     padding-top: 30px;
     margin-top: -30px;
 
@@ -33,7 +33,7 @@
     position: absolute;
     top: 0;
     right: 0;
-    height: 51.8vw;
+    height: 49.6vw;
     min-height: 500px;
     width: 101%;
     padding: 0;
@@ -509,31 +509,21 @@ img.full-width {
             and (min-device-width: 768px)
             and (max-device-width: 1023px)
             and (orientation: portrait) {
-                bottom: -10px !important;
-            }
-
-            @media only screen
-            and (min-device-width: 768px)
-            and (orientation: landscape)  {
-                bottom: 30px !important;
+                bottom: 0 !important;
             }
 
             @include desktop {
                 bottom: 50px;
             }
 
+            @include mobile {
+                display: none;
+            }
+
             p {
                 font-size: 8px;
                 text-align: center;
-                padding: 0 25%;
-
-                @include desktop {
-                    padding: 0 30%;
-                }
-            }
-
-            @include mobile {
-                display: none;
+                padding: 0 20%;
             }
         }
     }

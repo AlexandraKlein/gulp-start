@@ -352,12 +352,17 @@ img.full-width {
             min-height: 0 !important;
         }
 
-        @include tablet-max {
+        @media only screen
+        and (min-device-width: 768px)
+        and (max-device-width: 1023px)
+        and (orientation: portrait) {
             height: 500px;
+            max-height: 500px;
 
             video {
                 padding-left: 0 !important;
             }
+
         }
 
         @include tablet {
@@ -396,6 +401,13 @@ img.full-width {
             left: 50%;
             transform: translateX(-50%);
             display: block;
+
+            @media only screen
+            and (min-device-width: 768px)
+            and (max-device-width: 1023px)
+            and (orientation: portrait) {
+                bottom: 80px !important;
+            }
 
             @include mobile {
                 top: 690px;
@@ -493,6 +505,19 @@ img.full-width {
             bottom: 0;
             color: #8082c0;
 
+            @media only screen
+            and (min-device-width: 768px)
+            and (max-device-width: 1023px)
+            and (orientation: portrait) {
+                bottom: -10px !important;
+            }
+
+            @media only screen
+            and (min-device-width: 768px)
+            and (orientation: landscape)  {
+                bottom: 30px !important;
+            }
+
             @include desktop {
                 bottom: 50px;
             }
@@ -512,8 +537,4 @@ img.full-width {
             }
         }
     }
-}
-
-.rulesWinPSVR {
-
 }
